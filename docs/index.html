@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SidebarCV is a flexible two-column theme for RenderCV. Start with a ready-to-use layout, choose your sidebar sections, and customize your CV with editable examples.">
+  <link rel="canonical" href="https://Un1oR.github.io/rendercv-sidebarcv-theme/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SidebarCV">
+  <meta property="og:title" content="SidebarCV — a flexible two-column theme for RenderCV">
+  <meta property="og:description" content="A ready-to-use CV layout with selectable sidebar sections. Explore editable examples and customize placement, widths and typography.">
+  <meta property="og:url" content="https://Un1oR.github.io/rendercv-sidebarcv-theme/">
+  <meta property="og:image" content="https://Un1oR.github.io/rendercv-sidebarcv-theme/assets/overview.png">
+  <meta property="og:image:alt" content="Two SidebarCV layouts: Alice's compact technical CV and Bob's spacious design CV.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="light">
+  <title>SidebarCV — a flexible two-column theme for RenderCV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header wrap">
+  <a class="wordmark" href="#">sidebar<span>cv</span><span class="mark" aria-hidden="true"></span></a>
+  <nav aria-label="Main navigation">
+    <a href="#gallery">Examples</a><a href="#start">Get started</a><a href="#reference">Reference</a>
+    <a class="github" href="https://github.com/Un1oR/rendercv-sidebarcv-theme">GitHub <span aria-hidden="true">↗</span></a>
+  </nav>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">SidebarCV for RenderCV</p>
+      <h1>A little room<br>on the <em>side.</em></h1>
+      <p class="lead">Start with a ready-to-use layout. Choose the sections that belong in your sidebar.</p>
+      <p>Place sections in the main column, sidebar, header or across the page. Customize widths, contacts and typography in your RenderCV YAML.</p>
+      <div class="actions"><a class="button" href="#start">Build your CV <span aria-hidden="true">→</span></a><a href="#gallery">Explore the examples</a></div>
+      <ul class="facts"><li>PDF + PNG</li><li>Supports standard RenderCV entries</li></ul>
+    </div>
+    <a class="hero-preview" href="assets/hero.pdf" aria-label="Open Alice Morgan's two-page sample PDF" target="_blank" rel="noopener">
+      <img src="assets/hero-1.png" alt="Alice Morgan's compact technical CV with a header summary and sidebar contacts." width="1224" height="1584">
+      <span class="preview-label">Alice Morgan <span>View the PDF ↗</span></span>
+    </a>
+  </section>
+
+  <section class="principles wrap" aria-label="Layout principles">
+    <article><span class="number">01</span><h2>Two independent flows.</h2><p>Choose the sections for each column. Main and sidebar content keep their own order and continue in their assigned columns across pages.</p></article>
+    <article><span class="number">02</span><h2>A place for each section.</h2><p>Choose main, sidebar, full-width or header placement for each section. Adjust the balance to suit the content of your CV.</p></article>
+    <article><span class="number">03</span><h2>Only the choices you need.</h2><p>Use the defaults, then choose widths, contacts, stacked lists and page-break rules. Your content stays in the standard RenderCV data model.</p></article>
+  </section>
+
+  <section class="section wrap" id="gallery">
+    <div class="section-heading"><div><p class="eyebrow">Meet the examples</p><h2>One theme. Different stories.</h2></div><p>Explore each CV page by page, then use its YAML as a starting point.</p></div>
+    <div class="gallery">
+      <article class="sample" data-source="john" data-name="John Doe">
+        <a class="paper" href="assets/john.pdf" aria-label="Open John Doe's CV, page 1" target="_blank" rel="noopener"><img id="preview-john" src="assets/john-1.png" alt="John Doe, page one: the default SidebarCV layout, with education and inline skill groups in a narrow sidebar." width="1224" height="1584" loading="lazy"></a>
+        <div class="sample-copy">
+          <div class="sample-pages" role="group" aria-label="Pages of John Doe's CV" hidden>
+            <button type="button" data-page="1" data-alt="John Doe, page one: the default SidebarCV layout, with education and inline skill groups in a narrow sidebar." aria-pressed="true" aria-controls="preview-john">Page 1</button>
+            <button type="button" data-page="2" data-alt="John Doe, page two: the complete Research Areas skill group starts on this page, alongside the main content." aria-pressed="false" aria-controls="preview-john">Page 2</button>
+            <button type="button" data-page="3" data-alt="John Doe, page three: the remaining full-width sections of the CV." aria-pressed="false" aria-controls="preview-john">Page 3</button>
+            <span class="sample-page-status" role="status" aria-live="polite" aria-atomic="true">Page 1 of 3</span>
+          </div>
+          <p class="eyebrow">The defaults</p><h3>John Doe</h3><p>A complete CV with only <code>theme: sidebarcv</code> in its design. Each skill group stays on one page.</p><div class="links"><a href="assets/john.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="assets/john.yaml" download>YAML ↓</a><a href="assets/john.html" target="_blank" rel="noopener">HTML ↗</a></div>
+        </div>
+      </article>
+      <article class="sample" data-source="alice" data-name="Alice Morgan">
+        <a class="paper" href="assets/alice.pdf" aria-label="Open Alice Morgan's CV, page 1" target="_blank" rel="noopener"><img id="preview-alice" src="assets/alice-1.png" alt="Alice Morgan, page one: a blue portrait, compact header summary, sidebar contacts and education." width="1224" height="1584" loading="lazy"></a>
+        <div class="sample-copy">
+          <div class="sample-pages" role="group" aria-label="Pages of Alice Morgan's CV" hidden>
+            <button type="button" data-page="1" data-alt="Alice Morgan, page one: a blue portrait, compact header summary, sidebar contacts and education." aria-pressed="true" aria-controls="preview-alice">Page 1</button>
+            <button type="button" data-page="2" data-alt="Alice Morgan, page two: the complete Skills section starts together in the sidebar, with continued main content and full-width writing." aria-pressed="false" aria-controls="preview-alice">Page 2</button>
+            <span class="sample-page-status" role="status" aria-live="polite" aria-atomic="true">Page 1 of 2</span>
+          </div>
+          <p class="eyebrow">Compact &amp; technical</p><h3>Alice Morgan</h3><p>A blue portrait, compact header and sidebar contacts. The complete Skills section starts together on page two.</p><div class="links"><a href="assets/alice.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="assets/alice.yaml" download>YAML ↓</a><a href="assets/alice.html" target="_blank" rel="noopener">HTML ↗</a><a href="assets/alice-portrait.png" download>Portrait ↓</a></div>
+        </div>
+      </article>
+      <article class="sample" data-source="bob" data-name="Bob Ellis">
+        <a class="paper" href="assets/bob.pdf" aria-label="Open Bob Ellis's CV, page 1" target="_blank" rel="noopener"><img id="preview-bob" src="assets/bob-1.png" alt="Bob Ellis, page one: a wider green sidebar with education and Methods, including the start of the Tools group, plus centered header contacts." width="1224" height="1584" loading="lazy"></a>
+        <div class="sample-copy">
+          <div class="sample-pages" role="group" aria-label="Pages of Bob Ellis's CV" hidden>
+            <button type="button" data-page="1" data-alt="Bob Ellis, page one: a wider green sidebar with education and Methods, including the start of the Tools group, plus centered header contacts." aria-pressed="true" aria-controls="preview-bob">Page 1</button>
+            <button type="button" data-page="2" data-alt="Bob Ellis, page two: the Tools group continues with spreadsheets, survey tools and collaborative whiteboards, alongside continued experience and projects." aria-pressed="false" aria-controls="preview-bob">Page 2</button>
+            <span class="sample-page-status" role="status" aria-live="polite" aria-atomic="true">Page 1 of 2</span>
+          </div>
+          <p class="eyebrow">Room for the details</p><h3>Bob Ellis</h3><p>A wider green sidebar and centered contacts. The Tools group continues onto page two.</p><div class="links"><a href="assets/bob.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="assets/bob.yaml" download>YAML ↓</a><a href="assets/bob.html" target="_blank" rel="noopener">HTML ↗</a></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section tinted" id="compare"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">Same content, a different balance</p><h2>A few deliberate changes.</h2></div><p>These are actual rendered PDFs.<br>The YAML content is identical.</p></div>
+    <div class="comparison">
+      <figure><a href="assets/comparison-before.pdf" target="_blank" rel="noopener"><img src="assets/comparison-before-1.png" alt="Before: centered contacts, a titled summary, a narrower sidebar, inline skill groups and repeated May 2024 dates." width="1224" height="1584" loading="lazy"></a><figcaption><strong>Before</strong><span>Default layout, with the top note and time spans hidden.</span></figcaption></figure>
+      <figure><a href="assets/comparison-after.pdf" target="_blank" rel="noopener"><img src="assets/comparison-after-1.png" alt="After: summary under the name, contacts in a wider sidebar, stacked skills, gray metadata and one May 2024 date." width="1224" height="1584" loading="lazy"></a><figcaption><strong>After</strong><span>Header summary · sidebar contacts · wider sidebar · stacked groups · collapsed dates</span></figcaption></figure>
+    </div>
+    <div class="compare-notes"><p><strong>Choose groups by label.</strong> <code>capitalize_stacked_details: [Practice]</code> capitalises items in the group labelled “Practice”. The “Technical” group keeps its original case.</p><p><strong>Compact matching dates.</strong> With month-only formatting and <code>collapse_same_dates: true</code>, May 2–21 displays as <code>May 2024</code>.</p><p><a href="assets/comparison.yaml" download>Content YAML ↓</a><br><a href="assets/comparison-design.yaml" download>“After” design YAML ↓</a></p></div>
+  </div></section>
+
+  <section class="section wrap" id="start">
+    <div class="section-heading"><div><p class="eyebrow">From YAML to PDF</p><h2>Start with a working CV.</h2></div><p>A local RenderCV theme you can keep beside your CV.</p></div>
+    <div class="setup-grid"><div><h3>1. Install and try an example</h3><pre><code>uv tool install "rendercv[full]"
+git clone https://github.com/Un1oR/rendercv-sidebarcv-theme.git
+cd rendercv-sidebarcv-theme
+cp examples/alice.yaml my_cv.yaml
+cp examples/alice-portrait.png .
+rendercv render my_cv.yaml</code></pre><p>The generated files appear in <code>rendercv_output/</code>. Edit <code>my_cv.yaml</code>, then render again. Use <code>--watch</code> for automatic updates. In PowerShell, use <code>Copy-Item examples/alice.yaml my_cv.yaml</code> and <code>Copy-Item examples/alice-portrait.png .</code>.</p><p>Install <a href="https://docs.astral.sh/uv/getting-started/installation/">uv</a> first if it is not available. Prefer pip? Use <code>python -m pip install "rendercv[full]"</code> in an activated virtual environment.</p></div>
+    <div><h3>2. Or bring your own content</h3><p>Copy the <strong>entire</strong> <code>sidebarcv/</code> directory next to your input YAML, and select the theme:</p><pre><code>my-resume/
+├── cv.yaml
+└── sidebarcv/
+    ├── __init__.py
+    ├── Preamble.j2.typ
+    └── ...</code></pre><pre><code>design:
+  theme: sidebarcv</code></pre><p>Keep the theme folder beside the <em>input YAML</em>, including when you load a separate design file with <code>--design</code>.</p></div></div>
+    <div class="note"><strong>Reuse your content.</strong> Store <code>cv:</code> in one file and <code>design:</code> in another to try different styles with the same CV. Run <code>rendercv render cv.yaml --design sidebar-design.yaml</code> to select a design.</div>
+    <p>Give your AI coding agent the repository URL and your existing CV, then ask it to create a SidebarCV layout while preserving your factual content.</p>
+  </section>
+
+  <section class="section reference wrap" id="reference">
+    <aside class="reference-nav"><p class="eyebrow">The reference</p><h2>Make it yours.</h2><nav aria-label="Option groups"><a href="#layout">Layout</a><a href="#contacts">Contacts &amp; photos</a><a href="#lists">Stacked details</a><a href="#breaks">Page breaks</a><a href="#dates">Dates &amp; tags</a><a href="#fonts">Fonts &amp; weight</a><a href="#compatibility">Compatibility</a></nav><p>Paths below start inside <code>design</code>. Examples show complete nesting.</p></aside>
+    <div class="reference-body">
+      <article id="layout"><h3>Layout and section placement</h3><p>Use section names from your own YAML in <code>sections.overrides</code>. Names are matched after lowercasing and replacing spaces with underscores: a section named <code>Work Experience</code> uses the key <code>work_experience</code>.</p>
+      <div class="table-scroll"><table><thead><tr><th>Option</th><th>Default</th><th>What it changes</th></tr></thead><tbody>
+      <tr><td><code>sidebar_width</code></td><td><code>0.25</code></td><td>Sidebar share of available width after subtracting the column gap. A number strictly between 0 and 1.</td></tr>
+      <tr><td><code>column_gap</code></td><td><code>0.7cm</code></td><td>Nonnegative space between columns, using a RenderCV/Typst dimension.</td></tr>
+      <tr><td><code>sections.overrides</code></td><td><code>{}</code></td><td>Named section overrides. Unspecified values inherit the global settings.</td></tr>
+      <tr><td><code>sections.overrides.&lt;name&gt;.placement</code></td><td><code>null</code></td><td>Choose <code>header</code>, <code>sidebar</code>, <code>main</code> or <code>full</code>. <code>null</code> uses the default placement below.</td></tr>
+      </tbody></table></div>
+      <div class="placement-grid"><div><strong>header</strong><p>Content under the name and headline, without the section title. Beside the photo when present.</p></div><div><strong>sidebar</strong><p>Independent right column, in source order. Contacts can open this column.</p></div><div><strong>main</strong><p>Left column, including on later pages after the sidebar has ended.</p></div><div><strong>full</strong><p>Before the first main section: full-width introduction. After it: close both columns and continue full-width.</p></div></div>
+      <p>By default, <code>summary</code>, <code>publications</code>, <code>talks</code> and <code>talks_and_publications</code> are full-width. <code>education</code>, <code>skills</code>, <code>languages</code> and <code>hobbies</code> go in the sidebar. Every other section goes in the main column.</p>
+      <pre><code>design:
+  theme: sidebarcv
+  sidebar_width: 0.32
+  column_gap: 0.8cm
+  sections:
+    overrides:
+      summary:
+        placement: header
+      methods:
+        placement: sidebar
+      selected_writing:
+        placement: full</code></pre>
+      <p>There is one two-column block. A full-width section after main content ends that block; later main sections stay full-width. Sidebar sections are collected independently of that boundary. Empty sections do not create a boundary. If either column is entirely empty, the other uses the full width.</p></article>
+
+      <article id="contacts"><h3>Contacts and photos</h3><div class="table-scroll"><table><thead><tr><th>Option</th><th>Default</th><th>What it changes</th></tr></thead><tbody>
+      <tr><td><code>header.connections.placement</code></td><td><code>header</code></td><td><code>header</code> keeps RenderCV's contact row; <code>sidebar</code> puts location and connections at the top of the right column.</td></tr>
+      <tr><td><code>header.connections.sidebar_title</code></td><td><code>Contact</code></td><td>The heading displayed above the sidebar contacts.</td></tr>
+      <tr><td><code>header.photo_vertical_alignment</code></td><td><code>center</code></td><td>Align the photo to <code>top</code>, <code>center</code> or <code>bottom</code> within the header.</td></tr>
+      </tbody></table></div><pre><code>design:
+  theme: sidebarcv
+  header:
+    photo_vertical_alignment: top
+    connections:
+      placement: sidebar
+      sidebar_title: Get in touch</code></pre><p>Photo size, side, contact icons, hyperlinks and connection formatting use the regular RenderCV options. Long contact text may need a wider sidebar or a shorter custom connection label.</p></article>
+
+      <article id="lists"><h3>Turn details into vertical lists</h3><p>Stacking is opt-in. It applies to <code>OneLineEntry</code> groups (<code>label</code> + <code>details</code>) and plain <code>TextEntry</code> strings. A group label appears above its items. Case and terminal punctuation are preserved unless you explicitly change them.</p>
+      <div class="table-scroll"><table><thead><tr><th>Section override</th><th>Default</th><th>What it changes</th></tr></thead><tbody>
+      <tr><td><code>stacked_details</code></td><td><code>false</code></td><td>Display delimiter-separated values on separate lines.</td></tr>
+      <tr><td><code>stacked_separator</code></td><td><code>','</code></td><td>Split on a comma or <code>'•'</code>, chosen explicitly for the section.</td></tr>
+      <tr><td><code>capitalize_stacked_details</code></td><td><code>false</code></td><td><code>true</code> capitalises each item's first character; <code>false</code> preserves it. A list of exact, case-sensitive group labels targets only those groups. The remaining characters are unchanged.</td></tr>
+      <tr><td><code>strip_trailing_period</code></td><td><code>false</code></td><td>Remove one final period from the end of a stacked plain TextEntry.</td></tr>
+      </tbody></table></div>
+      <pre><code>cv:
+  sections:
+    skills:
+      - label: Technical
+        details: Python, eBPF, iOS
+      - label: Practice
+        details: clear writing, patient mentoring
+design:
+  theme: sidebarcv
+  sections:
+    overrides:
+      skills:
+        stacked_details: true
+        capitalize_stacked_details: [Practice]
+        entries:
+          allow_page_break: false</code></pre>
+      <p>Choose the separator to match your content. A comma works for simple lists; <code>•</code> lets an item contain a comma:</p>
+      <pre><code># stacked_separator: ','
+details: Python, PostgreSQL, eBPF
+
+# stacked_separator: '•'
+details: research, synthesis • accessible testing</code></pre>
+      <p>The first example becomes three lines; the second becomes two. Splitting uses the literal separator, including when it appears inside quoted text. Inline Markdown and links are retained in the PDF/PNG output.</p><p>For <code>OneLineEntry</code>, select groups with their exact <code>label</code> values, as shown with <code>[Practice]</code> above. Use <code>true</code> or <code>false</code> for plain <code>TextEntry</code> strings. An empty label list preserves case. <code>BulletEntry</code>, <code>NumberedEntry</code> and <code>ReversedNumberedEntry</code> use their standard list rendering.</p>
+      </article>
+
+      <article id="breaks"><h3>Keep the useful things together</h3><p>The standard defaults remain <code>sections.allow_page_break: true</code> and <code>entries.allow_page_break: false</code>. Section and entry policies inherit independently. An explicit <code>true</code> can override a global <code>false</code>; <code>null</code> or omission inherits.</p>
+      <div class="table-scroll"><table><thead><tr><th>Section override</th><th>Default</th><th>Scope</th></tr></thead><tbody>
+      <tr><td><code>allow_page_break</code></td><td><code>null</code></td><td>The title and all entries in the section.</td></tr><tr><td><code>entries.allow_page_break</code></td><td><code>null</code></td><td>Each entry, subject to the section's outer constraint.</td></tr>
+      </tbody></table></div>
+        <div id="pagination">
+    <div class="pagination-heading"><h4>Three policies, the same content.</h4><p>Compare the end of page one with the start of page two.</p></div>
+    <div class="pagination-grid">
+      <div class="pagination-card">
+        <div class="pagination-copy"><h5>Let details flow.</h5><p>A group's items continue on the next page.</p></div>
+        <a href="assets/pagination-flow.pdf" target="_blank" rel="noopener"><img src="assets/pagination-flow.png" alt="Languages and Collaboration finish on page one; Delivery continues across the page break." width="360" height="691" loading="lazy"></a>
+        <div class="links"><a href="assets/pagination-flow.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="assets/pagination-flow.yaml" download>YAML ↓</a></div>
+      </div>
+      <div class="pagination-card">
+        <div class="pagination-copy"><h5>Keep the section.</h5><p>All of Skills moves together, leaving more space.</p></div>
+        <a href="assets/pagination-section.pdf" target="_blank" rel="noopener"><img src="assets/pagination-section.png" alt="Languages ends above the bottom of page one, leaving a gap; the whole Skills section starts on page two." width="360" height="691" loading="lazy"></a>
+        <div class="links"><a href="assets/pagination-section.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="assets/pagination-section.yaml" download>YAML ↓</a></div>
+      </div>
+      <div class="pagination-card">
+        <div class="pagination-copy"><h5>Keep each group.</h5><p>Breaks fall between complete groups — the default policy.</p></div>
+        <a href="assets/pagination-groups.pdf" target="_blank" rel="noopener"><img src="assets/pagination-groups.png" alt="Collaboration stays complete on page one with space below it; Delivery starts intact on page two." width="360" height="691" loading="lazy"></a>
+        <div class="links"><a href="assets/pagination-groups.pdf" target="_blank" rel="noopener">PDF ↗</a><a href="assets/pagination-groups.yaml" download>YAML ↓</a></div>
+      </div>
+    </div>
+    <details class="pagination-settings"><summary>Compare the settings</summary>
+      <p>Under <code>design.sections.overrides</code>, with <code>stacked_details: true</code>:</p>
+      <div class="pagination-grid">
+        <pre><code># Let details flow
+skills:
+  allow_page_break: true
+  entries:
+    allow_page_break: true</code></pre>
+        <pre><code># Keep the section
+skills:
+  allow_page_break: false
+  entries:
+    allow_page_break: true</code></pre>
+        <pre><code># Keep each group
+skills:
+  allow_page_break: true
+  entries:
+    allow_page_break: false</code></pre>
+      </div>
+      <p><a href="assets/pagination.yaml" download>Shared CV content ↓</a> · <a href="#breaks">Page-break reference</a></p>
+    </details>
+  </div>
+
+      <pre><code>design:
+  theme: sidebarcv
+  entries:
+    allow_page_break: true
+  sections:
+    overrides:
+      experience:
+        entries:
+          allow_page_break: false
+      education:
+        allow_page_break: false
+      skills:
+        stacked_details: true
+        entries:
+          allow_page_break: false</code></pre>
+      <p>This allows long content to flow while keeping jobs and each skill group intact, and keeping the whole education section together. Use the smallest keep-together unit that fits your content; large units can leave whitespace at the bottom of a page.</p>
+      <details><summary>What happens when an unbreakable unit is taller than a page?</summary><ul><li>A whole section or one TextEntry/OneLineEntry fails with an explanatory render error. Allow it to break or reduce its height.</li><li>A regular experience, education, project or publication entry starts on a fresh page and can split using RenderCV's renderer. The following entry also starts fresh. A first oversized entry can stay under its section heading at the top of a page.</li><li>Bullet and numbered sections use RenderCV's native list grouping and break behaviour.</li></ul></details></article>
+
+      <article id="dates"><h3>Dates, metadata and tags</h3><div class="table-scroll"><table><thead><tr><th>Option</th><th>Default</th><th>What it changes</th></tr></thead><tbody>
+      <tr><td><code>templates.collapse_same_dates</code></td><td><code>false</code></td><td>Show one date when the formatted start and end match, such as <code>May 2024 – May 2024</code> becoming <code>May 2024</code>.</td></tr>
+      <tr><td><code>colors.date_and_location</code></td><td><code>null</code></td><td>Colour metadata-only rows. <code>null</code> retains body colour.</td></tr>
+      <tr><td><code>colors.tags</code></td><td><code>null</code></td><td>Colour the dedicated italic tag row in experience entries. <code>null</code> retains body colour.</td></tr>
+      </tbody></table></div><pre><code>design:
+  theme: sidebarcv
+  colors:
+    date_and_location: gray
+    tags: gray
+  templates:
+    single_date: MONTH_NAME YEAR
+    collapse_same_dates: true
+  sections:
+    show_time_spans_in: []</code></pre><p><code>templates.single_date</code> and <code>sections.show_time_spans_in</code> are standard RenderCV options. The defaults are <code>MONTH_ABBREVIATION YEAR</code> and <code>[experience]</code>. Set an empty list, as above, to hide computed durations.</p>
+      <p>Date and location colour applies to rows containing only <code>DATE</code>, <code>LOCATION</code> and separators. A row such as <code>DATE • LOCATION</code> removes the separator when one value is missing. Mixed prose such as <code>SUMMARY, DATE</code> keeps its normal styling.</p>
+      <pre><code>cv:
+  sections:
+    experience:
+      - company: Lantern Workshop
+        position: Software engineer
+        start_date: 2022-01
+        tags: Python · PostgreSQL · accessible interfaces</code></pre><p>Add <code>tags</code> to an experience or project entry to display an italic line beneath its content. The experience tag row also supports <code>colors.tags</code>.</p>
+      </article>
+
+      <article id="fonts"><h3>Fonts and emphasis</h3><div class="table-scroll"><table><thead><tr><th>Option</th><th>Default</th><th>What it changes</th></tr></thead><tbody><tr><td><code>typography.bold_weight</code></td><td><code>700</code></td><td>Weight of strong emphasis, an integer from 100 to 900. Explicit heading weights are unaffected. The selected face must be available.</td></tr></tbody></table></div><p>The default font is Source Sans 3. Use <code>typography.font_family</code> to choose another font family.</p>
+      <p>For lighter emphasis, use weight 600 with Adobe Source Sans 3 Semibold and Semibold Italic. These faces are included under <code>extras/fonts/</code> with their SIL Open Font License. Copy the directory to <code>fonts/</code> beside your YAML and choose the weight:</p><pre><code># From the repository root, with my_cv.yaml beside sidebarcv/
+cp -R extras/fonts fonts
+
+# In the design section of my_cv.yaml:
+design:
+  theme: sidebarcv
+  typography:
+    bold_weight: 600</code></pre><p>In PowerShell, use <code>Copy-Item extras/fonts fonts -Recurse</code>. RenderCV loads additional fonts from <code>fonts/</code> beside the input YAML. Preserve the supplied licence when redistributing font files. See the repository's <a href="https://github.com/Un1oR/rendercv-sidebarcv-theme/tree/main/extras/fonts">font files and licence</a> and <a href="https://docs.rendercv.com/user_guide/how_to/custom_fonts/">RenderCV's custom-font instructions</a>.</p></article>
+
+      <article id="compatibility"><h3>Output and compatibility</h3><p>SidebarCV supports standard RenderCV entries and builds on the <code>classic</code> theme's typography, margins and colours. Combine RenderCV's design options with the placement and formatting controls above.</p><p><strong>PDF and PNG</strong> use the SidebarCV layout. RenderCV also generates <strong>linear HTML and Markdown</strong> in YAML section order. <a href="assets/alice.html" target="_blank" rel="noopener">View Alice's HTML example</a>. A matching two-column HTML layout is a possible future improvement. To include custom tags in HTML and Markdown, add them to your Markdown templates.</p><p>The tests cover tricky layout cases and multi-page CVs. Check your own rendered CV and <a href="https://github.com/Un1oR/rendercv-sidebarcv-theme/issues">report issues</a> with a small YAML example that shows the problem.</p>
+      <div class="source-links"><a href="https://docs.rendercv.com/user_guide/how_to/override_default_templates/">Custom-theme mechanism ↗</a><a href="https://docs.rendercv.com/user_guide/yaml_input_structure/design/">Standard design options ↗</a><a href="https://github.com/Un1oR/rendercv-sidebarcv-theme/issues">Report a reproducible issue ↗</a></div></article>
+    </div>
+  </section>
+</main>
+<footer class="site-footer wrap"><a class="wordmark" href="#">sidebar<span>cv</span></a><p>A flexible two-column CV theme.<br>Built with RenderCV and Typst.</p><a href="https://github.com/Un1oR/rendercv-sidebarcv-theme">Source, examples &amp; tests ↗</a></footer>
+<script src="gallery.js" defer></script>
+</body>
+</html>

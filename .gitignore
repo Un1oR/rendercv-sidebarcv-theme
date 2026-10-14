@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+rendercv_output/
+tests/output/
+cv.yaml
+/my_cv.yaml
+/comparison_cv.yaml
+/comparison_before/
+/comparison_after/
+/alice-portrait.png

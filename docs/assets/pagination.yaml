@@ -1,0 +1,133 @@
+# Fictional pagination example: identical content in all three demonstrations.
+# The default render keeps each stacked skill group together.
+cv:
+  name: Nora Patel
+  headline: Platform engineer · reliable services and thoughtful teamwork
+  location: Leeds, United Kingdom
+  email: nora.patel@example.com
+  sections:
+    experience:
+    - company: Orchard Systems
+      position: Lead platform engineer
+      start_date: 2022-04
+      end_date: present
+      summary: A fictional team building scheduling and reporting tools for community organisations.
+        I guide a small platform group supporting product engineers and operations colleagues.
+      highlights:
+      - Designed a shared deployment process with clear ownership and recovery steps. Teams can 
+        release routine changes without waiting for a specialist to be available.
+      - Replaced a fragile overnight import with resumable jobs and visible progress. Support staff 
+        can identify incomplete work and restart only the affected records.
+      - Worked with service owners to define useful reliability goals. Reports connect technical 
+        failures to the tasks people were trying to complete.
+      - Led a gradual migration from a shared database to explicit service interfaces, keeping 
+        existing integrations working throughout the transition.
+      - Created practical incident exercises using familiar failure scenarios. Every exercise ends 
+        with a small improvement to a runbook, alert or recovery tool.
+      - Mentored engineers through design reviews and production investigations, with an emphasis on
+        explaining decisions and asking useful questions.
+    - company: Canopy Cooperative
+      position: Senior software engineer
+      start_date: 2019-02
+      end_date: 2022-03
+      summary: Built internal services for a fictional cooperative delivering supplies to local 
+        shops. Paired with dispatchers and customer support to improve daily operations.
+      highlights:
+      - Built an availability service that combined warehouse updates with planned deliveries. Clear
+        error messages made incomplete or delayed updates visible to staff.
+      - Added contract tests around external integrations so changes could be deployed gradually, 
+        with evidence that existing clients still behaved correctly.
+      - Simplified the order correction workflow after observing support calls. Staff could review 
+        the history of a change before updating an order.
+      - Introduced lightweight architecture notes describing constraints and tradeoffs. New 
+        colleagues used them to understand why existing services behaved as they did.
+      - Improved local development scripts and reference datasets, helping engineers reproduce 
+        common support issues without access to customer records.
+    - company: Meadow Instruments
+      position: Software engineer
+      start_date: 2016-07
+      end_date: 2019-01
+      summary: Developed a fictional laboratory booking product with a small team of engineers, 
+        researchers and support specialists.
+      highlights:
+      - Implemented reservation rules that accounted for equipment maintenance, preparation time and
+        competing requests for the same resources.
+      - Added audit history and read-only exports for laboratory coordinators. Reports explained 
+        changes without exposing unnecessary participant information.
+      - Turned recurring support questions into regression tests and short troubleshooting guides 
+        that colleagues could use during a busy day.
+      - Worked with researchers to check keyboard access, validation messages and the order of 
+        fields in the booking form.
+    education:
+    - institution: Northbridge Institute of Technology
+      area: Software Systems
+      degree: MSc
+      start_date: 2014-09
+      end_date: 2016-06
+      highlights:
+      - Research project on understandable incident reports for teams maintaining distributed 
+        services.
+    - institution: Alder College
+      area: Computer Science
+      degree: BSc
+      start_date: 2011-09
+      end_date: 2014-06
+      highlights:
+      - Group project building accessible booking tools with local community organisations.
+    toolbox:
+    - label: Engineering
+      details: Python, Go, PostgreSQL, HTTP APIs, Event processing, Data modelling, Contract testing
+    - label: Reliability
+      details: Service objectives, Incident response, Recovery exercises, Capacity planning, Alert 
+        design, Runbook writing, Failure analysis
+    languages:
+    - label: English
+      details: Native
+    - label: French
+      details: Working proficiency
+    skills:
+    - label: Collaboration
+      details: Design reviews, Pair programming, Knowledge sharing
+    - label: Delivery
+      details: Small batch releases, Migration planning, Feature flags, Deployment pipelines, 
+        Rollback procedures, Progress reporting, Incremental rollout
+    - label: Leadership
+      details: Patient mentoring, Shared ownership, Career conversations
+design:
+  theme: sidebarcv
+  sidebar_width: 0.32
+  column_gap: 0.7cm
+  page:
+    show_top_note: false
+  header:
+    alignment: left
+    space_below_name: 0.25cm
+    space_below_headline: 0.25cm
+    space_below_connections: 0.4cm
+    connections:
+      show_icons: false
+      separator: •
+  typography:
+    alignment: left
+  colors:
+    date_and_location: gray
+  entries:
+    allow_page_break: true
+  sections:
+    allow_page_break: true
+    show_time_spans_in: []
+    overrides:
+      education:
+        entries:
+          allow_page_break: false
+      skills:
+        stacked_details: true
+        entries:
+          allow_page_break: false
+      toolbox:
+        placement: sidebar
+        stacked_details: true
+        entries:
+          allow_page_break: false
+settings:
+  current_date: '2026-10-14'

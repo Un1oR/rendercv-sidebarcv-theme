@@ -1,0 +1,29 @@
+# Render with: rendercv render cv.yaml --design examples/comparison-design.yaml
+design:
+  theme: sidebarcv
+  page:
+    show_top_note: false
+  sidebar_width: 0.32
+  typography:
+    alignment: left
+  header:
+    alignment: left
+    space_below_name: 0.25cm
+    space_below_headline: 0.3cm
+    connections:
+      placement: sidebar
+  colors:
+    date_and_location: gray
+    tags: gray
+  templates:
+    collapse_same_dates: true
+  sections:
+    show_time_spans_in: []
+    overrides:
+      summary:
+        placement: header
+      skills:
+        stacked_details: true
+        capitalize_stacked_details: [Practice]
+        entries:
+          allow_page_break: false

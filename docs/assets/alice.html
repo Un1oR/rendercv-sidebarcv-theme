@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+    </title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.5.1/github-markdown-light.min.css"
+        integrity="sha512-Pmhg2i/F7+5+7SsdoUqKeH7UAZoVMYb1sxGOoJ0jWXAEHP0XV2H4CITyK267eHWp2jpj7rtqWNkmEOw1tNyYpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.css" integrity="sha384-PDbUeNCuE6bOPudPOgFyIUEy3UJawJVwr3XlGO90FIuf5qNIoTLSgOJo/dC2ZXV/" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/katex.min.js" integrity="sha384-VkqWq8xtm5YQk1BBXczQ8/Sx+DlCzF8cuS43bZwmtVXzRFtyLTqTCdP7MKmKo+KN" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.12/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters: [{ left: '$$',  right: '$$',  display: false }]});"></script>
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="markdown-body">
+        <h1>Alice Morgan's CV</h1>
+        <ul>
+        <li>Email: <a href="mailto:alice.morgan@example.com">alice.morgan@example.com</a></li>
+        <li>Location: Bristol, United Kingdom</li>
+        <li>Website: <a href="https://example.com/alice">example.comalice</a></li>
+        </ul>
+        <h1>Summary</h1>
+        <p>I turn growing software platforms into systems that teams can understand and operate. My work joins hands-on engineering, pragmatic architecture and patient mentoring. I care about useful defaults, clear ownership and the experience of the person on call.</p>
+        <h1>Experience</h1>
+        <h2><strong>Staff platform engineer</strong>, Northstar Atlas</h2>
+        <p>Mar 2023 – present</p>
+        <p>Bristol · hybrid</p>
+        <p>A fictional mapping software company supporting research teams and civic services. Led the platform group as the product grew from a regional service into a shared service for twelve partner organisations.</p>
+        <ul>
+        <li>
+        <p>Replaced a single shared release window with independently deployable services, reducing the median time from a reviewed change to production from two days to forty minutes.</p>
+        </li>
+        <li>
+        <p>Designed a versioned ingestion API with idempotent writes and explicit retry behaviour. Worked with partner engineers to migrate each client without a coordinated cutover.</p>
+        </li>
+        <li>
+        <p>Introduced service ownership, measurable reliability goals and short incident reviews. The approach gave product teams a common language for choosing between new work and operational improvements.</p>
+        </li>
+        <li>
+        <p>Built a small paved road for deployments, secrets and observability. Kept the underlying tools accessible so teams could investigate failures without waiting for platform support.</p>
+        </li>
+        <li>
+        <p>Coached six engineers through design reviews and production investigations; rotated facilitation so knowledge and decision-making did not depend on a single person.</p>
+        </li>
+        </ul>
+        <p><em>Python · PostgreSQL · Kubernetes · OpenTelemetry</em></p>
+        <h2><strong>Senior software engineer</strong>, Cedar Post</h2>
+        <p>Feb 2020 – Feb 2023</p>
+        <p>Remote</p>
+        <p>Built dispatch and tracking tools for a fictional cooperative of independent delivery services. Owned the data path from mobile updates to customer-facing tracking.</p>
+        <ul>
+        <li>
+        <p>Split a fragile nightly import into resumable stages with a visible progress log. Operators could replay a failed stage without reprocessing successful deliveries.</p>
+        </li>
+        <li>
+        <p>Added contract tests and consumer-driven migration plans around the public tracking API, then removed obsolete endpoints once every active client had moved.</p>
+        </li>
+        <li>
+        <p>Reworked the operations dashboard with dispatchers during weekly observation sessions. Made delays, stale device updates and missing addresses visible before a customer called.</p>
+        </li>
+        <li>
+        <p>Documented recovery procedures as executable commands with expected output. A new engineer could restore the staging service and explain what each step protected.</p>
+        </li>
+        </ul>
+        <p><em>Go · Redis · event processing · accessible interfaces</em></p>
+        <h2><strong>Software engineer</strong>, Meadow Instruments</h2>
+        <p>July 2017 – Jan 2020</p>
+        <p>Bath, United Kingdom</p>
+        <p>Developed a fictional laboratory scheduling product with a small multidisciplinary team.</p>
+        <ul>
+        <li>
+        <p>Implemented a reservation service that accounted for equipment maintenance and shared preparation time, with explicit validation of conflicting bookings.</p>
+        </li>
+        <li>
+        <p>Added audit history and a read-only export for laboratory coordinators. Clear error messages reduced support requests around incomplete booking forms.</p>
+        </li>
+        <li>
+        <p>Paired with the support team to turn recurring reports into regression tests and concise troubleshooting notes.</p>
+        </li>
+        </ul>
+        <p><em>TypeScript · Python · SQL</em></p>
+        <h1>Education</h1>
+        <h2><strong>MSc, Computer Science</strong>Westbridge Institute of Technology</h2>
+        <p>Sept 2015 – June 2017</p>
+        <ul>
+        <li>Research project on understandable failure reports in distributed applications.</li>
+        </ul>
+        <h2><strong>BSc, Mathematics</strong>Alder College</h2>
+        <p>Sept 2012 – June 2015</p>
+        <h1>Skills</h1>
+        <p><strong>Systems:</strong> Python, Go, PostgreSQL, Kubernetes, eBPF, OpenTelemetry, Redis</p>
+        <p><strong>Practice:</strong> API design, incident analysis, incremental migration, technical writing, contract testing, release planning</p>
+        <p><strong>Reliability:</strong> Service objectives, Recovery exercises, Capacity planning, Alert design, Runbook writing, Failure analysis</p>
+        <p><strong>Collaboration:</strong> Design reviews, Pair programming, Workshop facilitation, Decision records, Knowledge sharing, Team onboarding</p>
+        <p><strong>Strengths:</strong> patient mentoring, clear communication, calm decision-making, thoughtful feedback, shared ownership</p>
+        <h1>Languages</h1>
+        <p><strong>English:</strong> Native</p>
+        <p><strong>French:</strong> Professional working proficiency</p>
+        <h1>Projects</h1>
+        <h2><strong>Harbour observability handbook</strong></h2>
+        <p>A fictional community guide for teams establishing their first on-call rotation, Jan 2025 – present</p>
+        <ul>
+        <li>
+        <p>Wrote runnable examples that connect user-visible symptoms to logs, traces and service metrics. Each chapter ends with a short investigation rather than a list of product features.</p>
+        </li>
+        <li>
+        <p>Tested the handbook with volunteer maintainers and revised the examples around the decisions readers found hardest to make.</p>
+        </li>
+        </ul>
+        <p><em>Open documentation · mentoring</em></p>
+        <h2><strong>Community repair weekend</strong></h2>
+        <p>A two-week volunteer programme coordinating repairs and sharing practical maintenance skills, May 2024 – May 2024</p>
+        <ul>
+        <li>Built a lightweight intake board with clear repair status, printable labels and an accessible public view.</li>
+        </ul>
+        <h1>Selected Writing</h1>
+        <h2><strong>Make recovery a normal operation</strong></h2>
+        <p>A fictional essay on testing restoration before an incident, Apr 2026</p>
+        <ul>
+        <li>Explains why a small rehearsed recovery procedure can be more useful than a long document that has never been run. Includes a checklist for ownership, required access and verification.</li>
+        </ul>
+        <h2><strong>The smallest useful platform</strong></h2>
+        <p>A fictional conference session about choosing a narrow platform scope, Sept 2025</p>
+        <ul>
+        <li>Uses a case study to show how an internal platform can standardise routine work while preserving a clear escape hatch for unusual workloads.</li>
+        </ul>
+    </article>
+</body>
+
+</html>

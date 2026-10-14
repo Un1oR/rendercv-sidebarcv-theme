@@ -1,0 +1,40 @@
+# Full design overlay: RenderCV --design replaces the design mapping.
+# Compare the same pagination.yaml content; only skill pagination changes.
+# Free flow is opt-in: RenderCV's inherited entries.allow_page_break default is false.
+design:
+  theme: sidebarcv
+  sidebar_width: 0.32
+  column_gap: 0.7cm
+  page:
+    show_top_note: false
+  header:
+    alignment: left
+    space_below_name: 0.25cm
+    space_below_headline: 0.25cm
+    space_below_connections: 0.4cm
+    connections:
+      show_icons: false
+      separator: •
+  typography:
+    alignment: left
+  colors:
+    date_and_location: gray
+  entries:
+    allow_page_break: true
+  sections:
+    allow_page_break: true
+    show_time_spans_in: []
+    overrides:
+      education:
+        entries:
+          allow_page_break: false
+      skills:
+        stacked_details: true
+        entries:
+          allow_page_break: true
+        allow_page_break: true
+      toolbox:
+        placement: sidebar
+        stacked_details: true
+        entries:
+          allow_page_break: false

@@ -1,0 +1,45 @@
+# Fictional compact sample used for the before/after gallery.
+cv:
+  name: Casey Chen
+  headline: Software engineer
+  location: London, United Kingdom
+  email: casey.chen@example.com
+  website: https://example.com/casey
+  sections:
+    summary:
+      - I build useful tools for small teams, with an emphasis on clear interfaces and reliable delivery.
+    experience:
+      - company: Lantern Workshop
+        position: Software engineer
+        start_date: 2022-01
+        end_date: present
+        summary: A fictional team creating tools for community organisations.
+        highlights:
+          - Built a booking service that helps staff see availability and recover from incomplete reservations.
+          - Worked with support colleagues to improve error messages and document common recovery steps.
+        tags: Python · PostgreSQL · accessible interfaces
+      - company: Willow Studio
+        position: Guest mentor
+        start_date: 2024-05-02
+        end_date: 2024-05-21
+        highlights:
+          - Helped a small student team turn a research prototype into a usable demonstration.
+    education:
+      - institution: Brookfield College
+        area: Computer Science
+        degree: BSc
+        start_date: 2018-09
+        end_date: 2021-06
+    skills:
+      - label: Technical
+        details: Python, PostgreSQL, eBPF, iOS
+      - label: Practice
+        details: patient mentoring, clear writing, collaborative delivery
+design:
+  theme: sidebarcv
+  page:
+    show_top_note: false
+  sections:
+    show_time_spans_in: []
+settings:
+  current_date: '2026-10-14'

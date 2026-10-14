@@ -1,0 +1,191 @@
+# Wide sidebar, centered header and a green colour palette.
+cv:
+  name: Bob Ellis
+  headline: Service designer · public spaces and everyday services
+  location: Rotterdam, Netherlands
+  email: bob.ellis@example.com
+  website: https://example.com/bob
+  sections:
+    summary:
+    - I help public-service teams make complicated journeys easier to navigate. I combine field 
+      research, service mapping and prototyping, with an emphasis on accessibility and the practical
+      constraints of the people delivering a service.
+    experience:
+    - company: Common Ground Studio
+      position: Lead service designer
+      start_date: 2022-06
+      end_date: present
+      location: Rotterdam
+      summary: A fictional design practice working with libraries, neighbourhood services and 
+        community organisations. Led research and service design on programmes involving staff 
+        across several locations.
+      highlights:
+      - Mapped the complete journey for residents applying for a shared community space, including 
+        the letters, phone calls and internal handovers that were missing from the existing process 
+        map.
+      - Ran accessible research sessions with residents who used interpreters, assistive technology 
+        or a trusted helper. Adapted consent and task materials so participation did not depend on 
+        reading a long form.
+      - Tested a simplified appointment letter with staff and residents before changing the 
+        underlying booking system. Clear preparation instructions reduced avoidable repeat visits.
+      - Facilitated weekly prototype reviews with front-desk staff, operational managers and the 
+        delivery team. Recorded decisions and open questions in one shared place.
+      - Created a service measurement plan covering completion, repeat contact and confidence, with 
+        guidance on how to interpret each measure alongside qualitative evidence.
+      - Helped the organisation establish an internal research panel with clear retention rules, 
+        plain-language invitations and a routine for reviewing who was underrepresented.
+      tags: Participatory research · accessibility · service operations
+    - company: Canal Works
+      position: Service designer
+      start_date: 2019-01
+      end_date: 2022-05
+      location: Utrecht
+      summary: A fictional cooperative helping local organisations improve public-facing services.
+      highlights:
+      - Observed library staff across four branches and mapped how reservations, missing items and 
+        accessibility requests moved between the public desk and back-office teams.
+      - Built a paper prototype of a new wayfinding system, then tested it with visitors before 
+        committing to permanent signage. Used finding errors to revise the vocabulary and placement.
+      - Designed a shared workshop format that combined a short research playback with a practical 
+        decision. Teams left with a specific next experiment and an owner.
+      - Worked with developers on accessible form patterns, including error recovery, saved progress
+        and a consistent explanation of what information was optional.
+      - Prepared a plain-language handover kit that made the research findings, assumptions and 
+        unresolved questions usable for the next delivery team.
+      tags: Journey mapping · facilitation · prototyping
+    - company: Neighbourhood Lab
+      position: Research assistant
+      start_date: 2016-09
+      end_date: 2018-12
+      location: Delft
+      summary: A fictional research group studying how residents use shared spaces.
+      highlights:
+      - Organised interviews and observation sessions for a study of community hubs, including 
+        evening visits for residents who could not attend during working hours.
+      - Synthesised field notes into evidence boards and supported the team in distinguishing 
+        observed behaviour from assumptions and proposed solutions.
+      - Created a lightweight archive with consistent consent records, accessible transcripts and a 
+        clear separation between public examples and participant information.
+    education:
+    - institution: Delta School of Design
+      area: Design for Society
+      degree: MA
+      start_date: 2014-09
+      end_date: 2016-07
+      highlights:
+      - Graduation project on accessible booking journeys for shared public spaces.
+    - institution: Harbour Arts College
+      area: Communication Design
+      degree: BA
+      start_date: 2010-09
+      end_date: 2014-06
+    methods:
+    - label: Research
+      details: contextual interviews • field observation • participatory workshops • accessible 
+        usability testing • diary studies • service walkthroughs • research planning • consent 
+        design
+    - label: Synthesis
+      details: service blueprints • evidence mapping • journey maps • clear research summaries • 
+        affinity mapping • opportunity framing • stakeholder maps • research playbacks
+    - label: Delivery
+      details: paper prototypes • content design • inclusive facilitation • small service 
+        experiments • service rehearsals • accessible forms • pilot planning • handover guides
+    - label: Tools
+      details: Figma • FigJam • HTML and CSS • spreadsheets • survey tools • collaborative 
+        whiteboards
+    languages:
+    - label: Dutch
+      details: Native
+    - label: English
+      details: Fluent
+    - label: German
+      details: Conversational
+    community:
+    - volunteer workshop facilitator • neighbourhood gardening • local history walks.
+    selected_projects:
+    - name: Welcome to the library
+      start_date: 2025-02
+      end_date: 2025-11
+      summary: A fictional pilot for a more accessible first visit
+      highlights:
+      - Designed a simple arrival guide, clearer sign-up instructions and staff prompts for visitors
+        who needed extra assistance.
+      - Tested each change in one branch before extending it to the remaining locations, with a 
+        short observation checklist for staff.
+    - name: Neighbourhood ideas week
+      start_date: '2024-03-02'
+      end_date: '2024-03-23'
+      summary: A fictional community consultation programme
+      highlights:
+      - Combined walk-up conversations, large-print activity sheets and a small online form so the 
+        consultation reached residents beyond the usual workshop participants.
+    workshops:
+    - name: Research that survives the handover
+      date: 2026-06
+      summary: A fictional half-day workshop for public-service teams
+      highlights:
+      - Participants practise explaining one finding, linking it to evidence and recording the 
+        decisions it can reasonably support.
+    - name: Prototype the conversation
+      date: 2025-10
+      summary: A fictional session for frontline staff and designers
+      highlights:
+      - A practical introduction to testing service scripts, letters and support conversations 
+        before investing in new software.
+design:
+  theme: sidebarcv
+  sidebar_width: 0.34
+  column_gap: 0.8cm
+  page:
+    show_top_note: false
+  typography:
+    alignment: left
+  colors:
+    name: '#24594f'
+    headline: '#24594f'
+    connections: '#24594f'
+    section_titles: '#24594f'
+    links: '#24594f'
+    date_and_location: '#5b6662'
+    tags: gray
+  header:
+    space_below_name: 0.25cm
+    space_below_headline: 0.25cm
+    space_below_connections: 0.4cm
+    connections:
+      show_icons: false
+      separator: •
+      space_between_connections: 0.3cm
+  templates:
+    single_date: MONTH_NAME YEAR
+  sections:
+    overrides:
+      methods:
+        placement: sidebar
+        stacked_details: true
+        stacked_separator: •
+        capitalize_stacked_details:
+        - Research
+        - Synthesis
+        - Delivery
+        entries:
+          allow_page_break: true
+        allow_page_break: true
+      community:
+        placement: sidebar
+        stacked_details: true
+        stacked_separator: •
+        capitalize_stacked_details: true
+        strip_trailing_period: true
+      education:
+        allow_page_break: false
+      selected_projects:
+        entries:
+          allow_page_break: false
+      workshops:
+        placement: full
+    show_time_spans_in: []
+  entries:
+    allow_page_break: true
+settings:
+  current_date: '2026-10-14'

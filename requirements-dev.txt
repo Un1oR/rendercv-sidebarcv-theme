@@ -1,0 +1,4 @@
+rendercv[full]==2.8
+typst==0.15.0
+rendercv-fonts==0.5.1
+Pillow==12.1.1
